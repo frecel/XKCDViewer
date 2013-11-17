@@ -1,9 +1,21 @@
 {
 	"name": "XKCD Viewer",
 	"description": "Unofficial XKCD App",
-	"launch_path": "index.html",
+	"launch_path": "/index.html",
+    "icons": {
+        "128": "/icon-128.png",
+        "90": "/icon-90.png",
+        "60": "/icon-60.png",
+        "30": "/icon-30.png"
+    },
+    "developer": {
+        "name": "Artur Frącek",
+        "url": "http://polishedperspective.com"
+    },
     "type": "privileged",
     "permissions": {
-        "systemXHR":{}
+        "systemXHR":{
+            "description": "Required for downloading json files with information on the comics"
+        }
     }
 }
