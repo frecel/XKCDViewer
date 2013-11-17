@@ -1,7 +1,12 @@
+/*
+load() function directs Element with the id "comic" to
+window.xkcdinfo.img which contains the current image location
+*/
 function load() {
     window.currentxkcd = window.xkcdinfo.num;
     document.getElementById("comic").innerHTML = "<img src=" + window.xkcdinfo.img + ">";    
 }
+
 
 function httpRequest(strip) {
     var reqxkcd;
@@ -13,13 +18,15 @@ function httpRequest(strip) {
                 window.xkcdlatest = window.xkcdinfo.num;
             }
             load();
-        } else {
+        }
+		else {
             document.getElementById("comic").innerHTML = reqxkcd.readyState + " " + reqxkcd.status;
         }
         };
     if (!strip) {
         reqxkcd.open("GET", "http://xkcd.com/info.0.json", true);
-    } else {
+    }
+	else {
         reqxkcd.open("GET", "http://xkcd.com/" + strip + "/info.0.json", true);
     }
     reqxkcd.send(null);    
