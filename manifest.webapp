@@ -1,0 +1,9 @@
+{
+	"name": "XKCD Viewer",
+	"description": "Unofficial XKCD App",
+	"launch_path": "index.html",
+    "type": "privileged",
+    "permissions": {
+        "systemXHR":{}
+    }
+}
