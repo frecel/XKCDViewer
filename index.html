@@ -1,25 +1,24 @@
+ <!DOCTYPE html>
+ <!-- index.html -->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <title>XKCD Viewer</title>
-    <link rel="stylesheet" href="style.css">
-    <script language="javascript" type="text/javascript" src="script.js"></script>
-  </head>
-  
-  <body onload = "httpRequest()">
-  <div>
-    
-        <a href="#" OnClick="httpRequest(1)">|&lt;</a>
-        <a href="#" OnClick="httpRequest(window.currentxkcd - 1)">&lt; Prev</a>
-       <a href="#" OnClick="httpRequest(Math.round(Math.random() * window.xkcdlatest + 1))">Random</a>
-      <a href="#" OnClick="httpRequest(window.currentxkcd + 1)">Next &gt;</a>
-        <a href="#" OnClick="httpRequest()">&gt;|</a>
-    
-  </div>
-  
-  <div id="comic">test</div>
-  <div><a href="#" OnClick="window.alert(window.xkcdinfo.alt)">Description</a></div>
-  </body>
-  
-</html> 
+
+	<head>
+		<title>XKCD Viewer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<script language="javascript" type="text/javascript" src="script.js"></script>
+	</head>
+
+	<body onload = "httpRequest()">
+	  <section>
+			<a href="#" OnClick="httpRequest(1)">|&lt;</a>
+			<a href="#" OnClick="httpRequest(window.currentxkcd - 1)">&lt; Prev</a>
+			<a href="#" OnClick="httpRequest(Math.round(Math.random() * window.xkcdlatest + 1))">Random</a>
+			<a href="#" OnClick="httpRequest(window.currentxkcd + 1)">Next &gt;</a>
+			<a href="#" OnClick="httpRequest()">&gt;|</a>
+	  </section>
+	  <section id="comic">test</section>
+	  <section><a href="#" OnClick="window.alert(window.xkcdinfo.alt)">Description</a></section>
+	</body>
+
+</html>
