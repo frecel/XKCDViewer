@@ -13,6 +13,10 @@ for the most current JSON file containing the Image and alternate information
 for the current XKCD comic which it then strips and assigns to window.xkcdinfo.num
 for later use with load function.
 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/Development-Branch
 function httpRequest(strip) {
     var reqxkcd;
     reqxkcd = new XMLHttpRequest({mozSystem: true});
