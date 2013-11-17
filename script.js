@@ -7,6 +7,12 @@ function load() {
     document.getElementById("comic").innerHTML = "<img src=" + window.xkcdinfo.img + ">";    
 }
 
+/*
+httpRequest function creates a new information request to send to the XKCD Server
+for the most current JSON file containing the Image and alternate information
+for the current XKCD comic which it then strips and assigns to window.xkcdinfo.num
+for later use with load function.
+*/
 
 function httpRequest(strip) {
     var reqxkcd;
