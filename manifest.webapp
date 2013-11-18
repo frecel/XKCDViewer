@@ -5,6 +5,7 @@
     "icons": {
         "256": "/icon-256.png",
         "120": "/icon-120.png",
+        "60": "/icon-60.png,
         "32": "/icon-32.png"
     },
     "developer": {
