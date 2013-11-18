@@ -9,16 +9,16 @@
 		<script language="javascript" type="text/javascript" src="script.js"></script>
 	</head>
 
-	<body onload = "httpRequest()">
+	<body>
 	  <section>
-			<a href="#" OnClick="httpRequest(1)">|&lt;</a>
-			<a href="#" OnClick="httpRequest(window.currentxkcd - 1)">&lt; Prev</a>
-			<a href="#" OnClick="httpRequest(Math.round(Math.random() * window.xkcdlatest + 1))">Random</a>
-			<a href="#" OnClick="httpRequest(window.currentxkcd + 1)">Next &gt;</a>
-			<a href="#" OnClick="httpRequest()">&gt;|</a>
+			<a href="#" id="first">|&lt;</a>
+			<a href="#" id="previous">&lt; Prev</a>
+			<a href="#" id="random">Random</a>
+			<a href="#" id="next">Next &gt;</a>
+			<a href="#" id="last">&gt;|</a>
 	  </section>
-	  <section id="comic">test</section>
-	  <section><a href="#" OnClick="window.alert(window.xkcdinfo.alt)">Description</a></section>
+	  <section id="comic">No comic</section>
+	  <section><a href="#" id="alt">Description</a></section>
 	</body>
 
 </html>
