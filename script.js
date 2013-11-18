@@ -1,7 +1,7 @@
 function onLoadEvents() {
     httpRequest();
     document.getElementById("first").onclick = function () { httpRequest(1); };
-    document.getElementById("previous").mousedown = function () { httpRequest(window.currentxkcd - 1); };
+    document.getElementById("previous").onclick = function () { httpRequest(window.currentxkcd - 1); };
     document.getElementById("random").onclick = function () { httpRequest(Math.round(Math.random() * window.xkcdlatest + 1)); };
     document.getElementById("next").onclick = function () { httpRequest(window.currentxkcd + 1); };
     document.getElementById("last").onclick = function () { httpRequest(); };
